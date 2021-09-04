@@ -37,7 +37,8 @@ dependencies {
     implementation 'ru.noties:markwon:1.0.3'
     implementation "moe.shizuku.support:support-utils:2.2.4"
     implementation "moe.shizuku.support:recyclerview-utils:2.1.1"
-    implementation "moe.shizuku.support:design:1.0.0"
+    //implementation "moe.shizuku.support:design:1.0.0"
+    implementation 'com.github.yfdyh000:RikkaX:mipush_design-SNAPSHOT'
 }
 
 if (rootProject.file('bintray.gradle').canRead()) {
