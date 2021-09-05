@@ -1,4 +1,4 @@
-package moe.shizuku.support.helplib;
+package moe.shizuku.helplib;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -16,6 +16,9 @@ import moe.shizuku.preference.PreferenceFragment;
 import moe.shizuku.preference.PreferenceGroup;
 import moe.shizuku.support.recyclerview.RecyclerViewHelper;
 
+/**
+ * Created by rikka on 2017/9/14.
+ */
 
 public class HelpFragment extends PreferenceFragment {
 
@@ -72,7 +75,7 @@ public class HelpFragment extends PreferenceFragment {
      * Add a preference to specified preference group.
      */
     public void addPreference(String categoryKey, String title, Drawable icon, Preference.OnPreferenceClickListener listener) {
-        Preference preference = new Preference(getContext(), null,R.attr.preferenceStyle, R.style.HelpTheme_Preference);
+        Preference preference = new Preference(getContext(), null, R.attr.preferenceStyle, R.style.HelpTheme_Preference);
         preference.setTitle(title);
         preference.setIcon(icon);
         preference.setOnPreferenceClickListener(listener);

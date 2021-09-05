@@ -1,4 +1,4 @@
-package moe.shizuku.support.helplib;
+package moe.shizuku.helplib;
 
 import android.content.Intent;
 import android.os.Bundle;

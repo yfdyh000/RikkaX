@@ -1,4 +1,4 @@
-package moe.shizuku.support.helplib;
+package moe.shizuku.helplib;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import moe.shizuku.support.utils.IOUtils;
-import ru.noties.markwon.Markwon;
+import com.zzhoujay.markdown.MarkDown;
+import com.zzhoujay.markdown.method.LongPressLinkMovementMethod;
 
+import moe.shizuku.support.text.LocalImageGetter;
+
+/**
+ * Created by rikka on 2017/11/7.
+ */
 
 public class MarkdownFragment extends Fragment {
 
@@ -39,10 +44,11 @@ public class MarkdownFragment extends Fragment {
         }
 
         final TextView textView = view.findViewById(android.R.id.text1);
+        textView.setMovementMethod(LongPressLinkMovementMethod.getInstance());
         textView.post(new Runnable() {
             @Override
             public void run() {
-                Markwon.setMarkdown(textView, IOUtils.toString(getResources().openRawResource(res)));
+                textView.setText(MarkDown.fromMarkdown(getResources().openRawResource(res), new LocalImageGetter(textView), textView));
             }
         });
     }
