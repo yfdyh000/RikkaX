@@ -35,8 +35,8 @@ dependencies {
     implementation "moe.shizuku.preference:preference-dialog-android:$preferenceLibraryVersion"
     implementation "moe.shizuku.preference:preference-simplemenu:$preferenceLibraryVersion"
     implementation 'com.github.RikkaW:Markdown:1.0.6'
-    implementation "moe.shizuku.support:recyclerview-utils:2.1.1"
-    implementation "moe.shizuku.support:support-utils:2.2.4"
+    implementation "moe.shizuku.support:recyclerview-utils:2.0.4"
+    implementation "moe.shizuku.support:support-utils:2.1.0"
     //implementation "moe.shizuku.support:design:1.0.0"
     implementation 'com.github.yfdyh000:RikkaX:mipush_design-SNAPSHOT'
 }
