@@ -34,6 +34,7 @@ dependencies {
     implementation "moe.shizuku.preference:preference:$preferenceLibraryVersion"
     implementation "moe.shizuku.preference:preference-dialog-android:$preferenceLibraryVersion"
     implementation "moe.shizuku.preference:preference-simplemenu:$preferenceLibraryVersion"
+    implementation 'ru.noties:markwon:1.0.3'
     implementation 'com.github.RikkaW:Markdown:1.0.6'
     implementation "moe.shizuku.support:recyclerview-utils:2.0.4"
     implementation "moe.shizuku.support:support-utils:2.1.0"

@@ -23,6 +23,6 @@ public class HelpArticleFragment extends MarkdownFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.helplib_content_article, container, false);
+        return inflater.inflate(moe.shizuku.helplib.R.layout.helplib_content_article, container, false);
     }
 }

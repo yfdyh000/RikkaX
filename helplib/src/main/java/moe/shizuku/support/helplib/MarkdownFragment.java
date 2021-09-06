@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import moe.shizuku.support.utils.IOUtils;
 import ru.noties.markwon.Markwon;
-
+import moe.shizuku.helplib.R;
 
 public class MarkdownFragment extends Fragment {
 
